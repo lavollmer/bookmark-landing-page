@@ -13,6 +13,11 @@ const Features = () => {
           them on the go.
         </p>
       </div>
+      <div className="flex flex-row items-center justify-evenly text-grayish-blue border-b border-grayish-blue font-bold">
+        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">Simple Bookmarking</button>
+        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">Speedy Searching</button>
+        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">Easy Sharing</button>
+      </div>
     </div>
   );
 };

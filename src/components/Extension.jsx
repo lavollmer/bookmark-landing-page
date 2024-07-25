@@ -17,8 +17,8 @@ const Extension = () => {
           you've got a favourite you'd like us to prioritize.
         </p>
       </div>
-      <div>
-        <div className="max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
+      <div className="flex flex-col md:flex-row md:justify-center space-x-2">
+        <div className="flex max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={ChromeIcon} alt="chrome icon" className="w-26 h-26" />
           <p className="text-grayish-blue text-sm mb-2 mt-2">
             Minimum version 62
@@ -28,9 +28,8 @@ const Extension = () => {
             Add & Install Extension
           </button>
         </div>
-      </div>
-      <div>
-        <div className="max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
+
+        <div className="max-w-xs  rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={FirefoxIcon} alt="firefox icon" className="w-26 h-26" />
           <p className="text-grayish-blue text-sm mb-2 mt-2">
             Minimum version 55
@@ -40,8 +39,7 @@ const Extension = () => {
             Add & Install Extension
           </button>
         </div>
-      </div>
-      <div>
+
         <div className="max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={OperaIcon} alt="opera icon" className="w-26 h-26" />
           <p className="text-grayish-blue text-sm mb-2 mt-2">

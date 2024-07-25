@@ -1,13 +1,27 @@
 import React from "react";
 import { useState } from "react";
 import SpeedySearching from "./SpeedySearching";
+import SimpleBookmarking from "./SimpleBookmarking";
+import EasySharing from "./EasySharing";
 
 const Features = () => {
   const [features, setFeatures] = useState(null);
 
+  const handleSimple = () => {
+    setFeatures("simpleBookmarking");
+    console.log("simpleBookmarking");
+    return;
+  };
+
   const handleSpeedy = () => {
     setFeatures("speedySearching");
     console.log("speedySearching");
+    return;
+  };
+
+  const handleEasy = () => {
+    setFeatures("easySharing");
+    console.log("easySharing");
     return;
   };
 
@@ -25,19 +39,27 @@ const Features = () => {
       </div>
       <div className="flex flex-row items-center justify-evenly text-grayish-blue border-b border-grayish-blue font-bold">
         <button
-          onClick={handleSpeedy}
+          onClick={handleSimple}
           className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
         >
           Simple Bookmarking
         </button>
-        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">
+        <button
+          onClick={handleSpeedy}
+          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+        >
           Speedy Searching
         </button>
-        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">
+        <button
+          onClick={handleEasy}
+          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+        >
           Easy Sharing
         </button>
       </div>
+      {features === "simpleSearching" && <SimpleSearching />}
       {features === "speedySearching" && <SpeedySearching />}
+      {features === "easySharing" && <EasySharing />}
     </div>
   );
 };

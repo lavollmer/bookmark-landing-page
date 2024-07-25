@@ -11,7 +11,7 @@ const BookmarkManager = () => {
           alt="Illustration"
           className="relative z-10"
         />
-        <div className="shape absolute inset-0 z-0 rounded-full"></div>
+        {/* <div className="shape absolute inset-0 z-0 rounded-full"></div> */}
       </div>
 
       <div className="flex flex-col items-center text-center justify-center">

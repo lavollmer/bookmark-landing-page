@@ -1,6 +1,10 @@
 import React from "react";
+import { useState } from "react";
+import SpeedySearching from "./SpeedySearching";
 
 const Features = () => {
+  const [features, setFeatures] = useState(null);
+
   return (
     <div>
       <div className="flex flex-col items-center justify-center m-10">
@@ -14,7 +18,10 @@ const Features = () => {
         </p>
       </div>
       <div className="flex flex-row items-center justify-evenly text-grayish-blue border-b border-grayish-blue font-bold">
-        <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">
+        <button
+          onClick={() => setFeatures("speedySearching")}
+          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+        >
           Simple Bookmarking
         </button>
         <button className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer">
@@ -24,6 +31,7 @@ const Features = () => {
           Easy Sharing
         </button>
       </div>
+      {features === "speedySearching" && <SpeedySearching />}
     </div>
   );
 };

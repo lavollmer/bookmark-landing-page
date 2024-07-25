@@ -1,6 +1,7 @@
 import React from "react";
 import illustrationHero from "../assets/illustration-hero.svg";
 import "../styles/Blueshape.css";
+import Features from "./Features";
 
 const BookmarkManager = () => {
   return (
@@ -34,6 +35,9 @@ const BookmarkManager = () => {
             Get it on Firefox
           </button>
         </div>
+      </div>
+      <div>
+        <Features />
       </div>
     </div>
   );

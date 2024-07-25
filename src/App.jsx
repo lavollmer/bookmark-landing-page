@@ -2,7 +2,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import BookmarkManager from "./components/BookmarkManager";
 import Features from "./components/Features";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         <BrowserRouter>
           <Navigation />
           <Routes>
-            <BookmarkManager path="/" element={<BookmarkManager />} />
-            <Features path="/features" element={<Features />} />
+            <Route path="/" element={<BookmarkManager />} />
+            <Route path="/features" element={<Features />} />
           </Routes>
         </BrowserRouter>
       </div>

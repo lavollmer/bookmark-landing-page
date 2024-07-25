@@ -7,6 +7,7 @@ function App() {
     <>
       <div>
         <Navigation />
+
         <BookmarkManager />
       </div>
     </>

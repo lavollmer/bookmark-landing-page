@@ -23,7 +23,15 @@ const Navigation = () => {
       <div>
         <img src={Logo} alt="logo" />
       </div>
-      <div>
+      <div className="flex flex-row space-x-6 font-rubik">
+        <button className="hidden md:block">FEATURES</button>
+        <button className="hidden md:block">PRICING</button>
+        <button className="hidden md:block">CONTACT</button>
+        <button className="bg-soft-red rounded-lg px-6 py-2 text-white">
+          LOGIN
+        </button>
+      </div>
+      <div className="md:hidden">
         <button onClick={handleClick}>
           <img src={Hamburger} alt="hamburger" />
         </button>

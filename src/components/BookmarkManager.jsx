@@ -1,12 +1,19 @@
 import React from "react";
 import illustrationHero from "../assets/illustration-hero.svg";
+import "../styles/Blueshape.css";
 
 const BookmarkManager = () => {
   return (
     <div className="flex flex-col font-rubik">
-      <div>
-        <img src={illustrationHero} alt="Illustr" />
+      <div className="relative">
+        <img
+          src={illustrationHero}
+          alt="Illustration"
+          className="relative z-10"
+        />
+        <div className="shape absolute inset-0 z-0 rounded-full"></div>
       </div>
+
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-bold text-lg md:text-4xl text-very-dark-blue">
           A Simple Bookmark Manager

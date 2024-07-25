@@ -6,7 +6,7 @@ import TwitterIcon from "../assets/icon-twitter.svg";
 
 const SideNav = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col font-rubik text-white bg-very-dark-blue">
       <div className="flex flex-row">
         <div>
           <img src={Logo} alt="logo" />

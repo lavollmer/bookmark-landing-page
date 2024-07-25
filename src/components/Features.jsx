@@ -37,27 +37,27 @@ const Features = () => {
           them on the go.
         </p>
       </div>
-      <div className="flex flex-row items-center justify-evenly text-grayish-blue border-b border-grayish-blue font-bold">
+      <div className="flex flex-row items-center justify-evenly text-grayish-blue border-grayish-blue font-bold">
         <button
-          onClick={handleSimple}
-          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+          onMouseEnter={handleSimple}
+          className="hover:border-b-2 hover:border-soft-red cursor-pointer"
         >
           Simple Bookmarking
         </button>
         <button
-          onClick={handleSpeedy}
-          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+          onMouseEnter={handleSpeedy}
+          className="hover:border-b-2  hover:border-soft-red cursor-pointer"
         >
           Speedy Searching
         </button>
         <button
-          onClick={handleEasy}
-          className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
+          onMouseEnter={handleEasy}
+          className="hover:border-b-2 hover:border-soft-red cursor-pointer"
         >
           Easy Sharing
         </button>
       </div>
-      {features === "simpleSearching" && <SimpleSearching />}
+      {features === "simpleBookmarking" && <SimpleBookmarking />}
       {features === "speedySearching" && <SpeedySearching />}
       {features === "easySharing" && <EasySharing />}
     </div>

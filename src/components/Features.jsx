@@ -5,6 +5,12 @@ import SpeedySearching from "./SpeedySearching";
 const Features = () => {
   const [features, setFeatures] = useState(null);
 
+  const handleSpeedy = () => {
+    setFeatures("speedySearching");
+    console.log("speedySearching");
+    return;
+  };
+
   return (
     <div>
       <div className="flex flex-col items-center justify-center m-10">
@@ -19,7 +25,7 @@ const Features = () => {
       </div>
       <div className="flex flex-row items-center justify-evenly text-grayish-blue border-b border-grayish-blue font-bold">
         <button
-          onClick={() => setFeatures("speedySearching")}
+          onClick={handleSpeedy}
           className="hover:border-b-4 hover:pb-2 hover:border-soft-red cursor-pointer"
         >
           Simple Bookmarking

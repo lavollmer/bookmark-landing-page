@@ -1,11 +1,11 @@
 import React from "react";
-import IllustrationFeatureOne from "../assets/illustration-features-tab-1.svg";
+import IllustrationFeatureTwo from "../assets/illustration-features-tab-2.svg";
 
 const SpeedySearching = () => {
   return (
-    <div className="flex flew-row">
+    <div className="flex flew-row m-10">
       <div>
-        <img src={IllustrationFeatureOne} alt="illustration" />
+        <img src={IllustrationFeatureTwo} alt="illustration" />
       </div>
       <div>
         <h1 className="flex flex-col items-center p-4 font-bold text-3xl  md:text-4xl text-very-dark-blue">

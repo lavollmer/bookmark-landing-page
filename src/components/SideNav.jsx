@@ -3,8 +3,25 @@ import Logo from "../assets/logo-bookmark.svg";
 import CloseIcon from "../assets/icon-close.svg";
 import FacebookIcon from "../assets/icon-facebook.svg";
 import TwitterIcon from "../assets/icon-twitter.svg";
+import { useState } from "react";
 
 const SideNav = () => {
+  //set state to false for close button
+  const [close, setClose] = useState(false);
+
+  //function to close the side nav
+  const handleClose = () => {
+    //set the state to the opposite of the current state to true
+    setClose(!close);
+    console.log("clicked");
+    return;
+  };
+
+  //if close is true, return null
+  if (close) {
+    return null;
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex flex-col font-rubik text-white bg-very-dark-blue bg-opacity-95 top-0 left-0 p-8">
       <div className="flex flex-row justify-between p-10">
@@ -12,7 +29,9 @@ const SideNav = () => {
           <img src={Logo} alt="Logo icon" />
         </div>
         <div>
-          <img src={CloseIcon} alt="close" />
+          <button onClick={handleClose}>
+            <img src={CloseIcon} alt="close" />
+          </button>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center space-y-2 text-2xl">

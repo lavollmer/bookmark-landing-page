@@ -24,7 +24,7 @@ const Navigation = () => {
       <div>
         <img src={Logo} alt="logo" />
       </div>
-      <div className="flex flex-row  space-x-6  font-rubik">
+      <div className="flex flex-row space-x-6 font-rubik text-very-dark-blue">
         <button className="hidden md:block text-shadow">FEATURES</button>
         <button className="hidden md:block text-shadow">PRICING</button>
         <button className="hidden md:block text-shadow">CONTACT</button>

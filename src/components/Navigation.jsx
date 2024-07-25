@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo-bookmark.svg";
 import Hamburger from "../assets/icon-hamburger.svg";
+import SideNav from "../components/SideNav"
 
 const Navigation = () => {
   return (

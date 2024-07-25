@@ -2,6 +2,7 @@ import React from "react";
 import illustrationHero from "../assets/illustration-hero.svg";
 import "../styles/Blueshape.css";
 import Features from "./Features";
+import Extension from "./Extension";
 
 const BookmarkManager = () => {
   return (
@@ -38,6 +39,9 @@ const BookmarkManager = () => {
       </div>
       <div>
         <Features />
+      </div>
+      <div>
+        <Extension />
       </div>
     </div>
   );

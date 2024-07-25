@@ -16,7 +16,7 @@ const SpeedySearching = () => {
           at all. No need to trawl through all your bookmarks.
         </p>
         <div>
-          <button className="bg-soft-blue box-shadow rounded-lg text-white font-bold py-2 px-4">
+          <button className="bg-soft-blue hover:bg-soft-red box-shadow rounded-lg text-white font-bold py-2 px-4">
             More info
           </button>
         </div>

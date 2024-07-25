@@ -15,7 +15,7 @@ const EasySharing = () => {
           Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
         </p>
         <div>
-          <button className="bg-soft-blue box-shadow rounded-lg text-white font-bold py-2 px-4">
+          <button className="bg-soft-blue hover:bg-soft-red box-shadow rounded-lg text-white font-bold py-2 px-4">
             More info
           </button>
         </div>

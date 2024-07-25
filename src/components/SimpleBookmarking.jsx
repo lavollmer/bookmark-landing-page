@@ -17,7 +17,7 @@ const SimpleBookmarking = () => {
           favourite sites.
         </p>
         <div>
-          <button className="bg-soft-blue box-shadow rounded-lg text-white font-bold py-2 px-4">
+          <button className="bg-soft-blue box-shadow rounded-lg text-white font-bold py-2 px-4 hover:bg-soft-red">
             More info
           </button>
         </div>

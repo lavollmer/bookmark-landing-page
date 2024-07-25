@@ -22,13 +22,13 @@ const Navigation = () => {
   return (
     <div className="flex flex-row justify-between m-14">
       <div>
-        <img src={Logo} alt="logo" className="box-shadow" />
+        <img src={Logo} alt="logo" />
       </div>
-      <div className="flex flex-row space-x-6  font-rubik">
+      <div className="flex flex-row  space-x-6  font-rubik">
         <button className="hidden md:block text-shadow">FEATURES</button>
         <button className="hidden md:block text-shadow">PRICING</button>
         <button className="hidden md:block text-shadow">CONTACT</button>
-        <button className="bg-soft-red rounded-lg box-shadow px-6 py-2 text-white">
+        <button className="hidden md:block box-shadow bg-soft-red rounded-lg px-6 py-2 text-white">
           LOGIN
         </button>
       </div>

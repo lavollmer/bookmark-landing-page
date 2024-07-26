@@ -6,18 +6,18 @@ import { LiaFacebookSquare } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-very-dark-blue font-rubik">
+    <div className="flex flex-col items-center justify-center space-y-8 p-10 md:flex-row bg-very-dark-blue font-rubik">
       <div>
-        <div className="flex flex-col items-center justify-center p-10">
+        <div className="flex flex-col">
           <img src={Logo} alt="Logo icon" />
         </div>
       </div>
-      <div className="flex flex-col text-white">
+      <div className="flex flex-col text-white space-y-4">
         <button className=" text-shadow">FEATURES</button>
         <button className=" text-shadow">PRICING</button>
         <button className=" text-shadow">CONTACT</button>
       </div>
-      <div className="flex flex-row items-center justify-center space-x-2">
+      <div className="flex flex-row space-x-2">
         <img src={FacebookIcon} alt="facebook icon" />
         <img src={TwitterIcon} alt="twitter" />
       </div>

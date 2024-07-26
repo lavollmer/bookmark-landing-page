@@ -3,6 +3,7 @@ import illustrationHero from "../assets/illustration-hero.svg";
 import "../styles/Blueshape.css";
 import Features from "./Features";
 import Extension from "./Extension";
+import Footer from "./Footer"
 
 const BookmarkManager = () => {
   return (
@@ -42,6 +43,9 @@ const BookmarkManager = () => {
       </div>
       <div>
         <Extension />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import "../styles/Blueshape.css";
 import Features from "./Features";
 import Extension from "./Extension";
 import Footer from "./Footer"
+import FAQ from "./FAQ";
 
 const BookmarkManager = () => {
   return (
@@ -43,6 +44,9 @@ const BookmarkManager = () => {
       </div>
       <div>
         <Extension />
+      </div>
+      <div>
+        <FAQ />
       </div>
       <div>
         <Footer />

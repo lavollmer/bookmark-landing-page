@@ -1,4 +1,7 @@
 import React from 'react'
+import { useState } from 'react'
+import Plus from '../assets/icon-arrow.svg'
+import Minus from '../assets/icon-close.svg'
 
 const FAQ = () => {
     //initializes a state variable named "active" and a function to update it as "setActive" using the useState hook, intial value is set to false
@@ -27,8 +30,29 @@ const FAQ = () => {
         id: 4,
       },
     ];
+
   return (
-    <div>FAQ</div>
+    <div>
+      <div className="flex flex-col items-center justify-center space-y-4">
+        <h1 className="text-3xl font-bold">Frequently Asked Questions</h1>
+        <p className="text-gray-500">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+      </div>
+      <div className="flex flex-col items-center justify-center space-y-4">
+        {data.map((item) => {
+          return (
+            <div key={item.id} className="flex flex-col items-center justify-center space-y-4">
+              <div className="flex flex-row items-center justify-between w-full">
+                <button onClick={() => setActive(!active)} className="w-full text-left text-lg font-bold">{item.intro}</button>
+                <img src={active ? Minus : Plus} alt="icon" />
+              </div>
+              <div className={active ? "block" : "hidden"}>
+                <p className="text-gray-500">{item.pg}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   )
 }
 

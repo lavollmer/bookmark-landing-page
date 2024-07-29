@@ -26,9 +26,9 @@ const Newsletter = () => {
         <h1 className="text-lg">35,000+ ALREADY JOINED</h1>
         <h2 className="text-2xl">Stay up-to-date with what we’re doing</h2>
       </div>
-      <div>
+      <div className="flex flex-row justify-center items-center text-center w-full">
         <form
-          className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
+          className="flex flex-col justify-center items-center md:flex-row md:space-x-4 mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
           onSubmit={handleSubmit}
         >
           <input
@@ -36,12 +36,12 @@ const Newsletter = () => {
             placeholder="name@mail.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="!border-t-blue-gray-200 focus:!border-t-gray-900 rounded-lg w-full py-3 px-4"
+            className="!border-t-blue-gray-200 focus:!border-t-gray-900 rounded-lg w-full md:w-2/3 md:h-1/2 py-3 px-4"
           />
           {error && <p className="text-red-500 mt-2">{error}</p>}
           <button
             type="submit"
-            className="bg-soft-red font-bold text-white rounded-md text-md py-4 md:text-lg md:py-3 px-4 mt-4"
+            className="flex md:flex-row justify-center items-center text-center bg-soft-red font-bold text-white rounded-md text-md md:text-lg mt-4 md:w-1/2 md:h-full md:mt-0"
           >
             Contact Us
           </button>

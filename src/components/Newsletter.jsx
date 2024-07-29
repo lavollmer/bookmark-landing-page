@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 const Newsletter = () => {
   return (
@@ -8,8 +9,12 @@ const Newsletter = () => {
         <h2 className="text-2xl">Stay up-to-date with what we’re doing</h2>
       </div>
       <div>
-        <form>
-          <input type="submit" placeholder="example@email.com"></input>
+        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+          <input
+            type="email"
+            placeholder="name@mail.com"
+            className="!border-t-blue-gray-200 focus:!border-t-gray-900 rounded-lg w-full py-3 px-4"
+          />
         </form>
       </div>
       <div className="flex flex-col w-full">

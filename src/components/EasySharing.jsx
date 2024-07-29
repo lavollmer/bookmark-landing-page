@@ -3,7 +3,7 @@ import IllustrationFeatureThree from "../assets/illustration-features-tab-3.svg"
 
 const EasySharing = () => {
   return (
-    <div className="flex flex-col md:flew-row items-center justify-center m-10">
+    <div className="flex flex-col md:flex-row items-center justify-center m-10">
       <div>
         <img src={IllustrationFeatureThree} alt="illustration" />
       </div>

@@ -35,7 +35,7 @@ const FAQ = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center text-center space-y-4 p-10">
+      <div className="flex flex-col items-center justify-center text-center space-y-4">
         <h1 className="text-3xl font-bold text-very-dark-blue">
           Frequently Asked Questions
         </h1>
@@ -45,7 +45,7 @@ const FAQ = () => {
         </p>
       </div>
       {/* iterate over each item in the data array */}
-      <div className="flex flex-col justify-start space-y-4 text-very-dark-blue p-10 mb-10">
+      <div className="flex flex-col justify-start space-y-4 text-very-dark-blue mb-10 p-40">
         {data.map((item) => {
           const isActive = activeId === item.id;
           return (

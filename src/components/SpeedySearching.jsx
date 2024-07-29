@@ -3,7 +3,7 @@ import IllustrationFeatureTwo from "../assets/illustration-features-tab-2.svg";
 
 const SpeedySearching = () => {
   return (
-    <div className="flex flex-col md:flew-row items-center justify-center m-6 md:m-10">
+    <div className="flex flex-col md:flex-row items-center justify-center m-6 md:m-10">
       <div>
         <img src={IllustrationFeatureTwo} alt="illustration" />
       </div>

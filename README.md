@@ -62,6 +62,7 @@ Users should be able to:
 ### Useful resources
 
 - [SVG Creator](https://www.softr.io/tools/svg-shape-generator) - I created the blue half circle with this website.
+- [Half Ellipse Shape Inspiration](https://github.com/Abbassher55/bookmark-project/blob/main/src/hero-section/Hero.jsx) - Inspiration for the half ellipse shape on the page.
  
 
 ## Author

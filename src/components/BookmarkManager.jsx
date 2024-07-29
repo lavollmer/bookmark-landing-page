@@ -7,7 +7,7 @@ import "../App.css";
 const BookmarkManager = () => {
   return (
     <div>
-      <div className="hidden md:block flex flex-row space-x-4 p-20">
+      <div className="hidden md:flex flex-row space-x-4 p-20">
         <div className="flex flex-col m-20 font-rubik w-1/2 space-y-40">
           <div className="flex flex-col justify-start p-20 space-y-10">
             <div className="flex flex-col space-y-10">

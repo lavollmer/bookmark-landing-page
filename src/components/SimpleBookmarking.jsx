@@ -4,7 +4,8 @@ import IllustrationFeatureOne from "../assets/illustration-features-tab-1.svg";
 const SimpleBookmarking = () => {
   return (
     <div className="flex flex-col md:flew-row items-center justify-center m-6 md:m-10">
-      <div>
+      <div className="relative flex justify-center md:w-1/2">
+        <div className="absolute right-1/2 top-1/2 -z-10 h-32 w-full rounded-r-full bg-primary md:h-44 md:-translate-y-12 lg:h-56"></div>
         <img src={IllustrationFeatureOne} alt="illustration" />
       </div>
       <div className="flex flex-col items-center text-center justify-center space-y-10 mt-10 md:ml-20 md:space-y-6">

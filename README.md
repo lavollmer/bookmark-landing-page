@@ -61,7 +61,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [SVG Creator](https://www.softr.io/tools/svg-shape-generator) - I created the blue half circle with this website.
  
 
 ## Author

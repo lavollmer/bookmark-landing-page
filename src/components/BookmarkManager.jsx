@@ -1,13 +1,13 @@
 import React from "react";
 import illustrationHero from "../assets/illustration-hero.svg";
-import "../styles/Blueshape.css";
+import Blob from "../assets/blob.svg";
 
 import "../App.css";
 
 const BookmarkManager = () => {
   return (
     <div>
-      <div className="flex flex-row space-x-4 p-20">
+      <div className="hidden md:block flex flex-row space-x-4 p-20">
         <div className="flex flex-col m-20 font-rubik w-1/2 space-y-40">
           <div className="flex flex-col justify-start p-20 space-y-10">
             <div className="flex flex-col space-y-10">
@@ -34,13 +34,20 @@ const BookmarkManager = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center">
-          <img src={illustrationHero} alt="Illustration" />
+
+        <div className="relative flex justify-center md:w-1/3 lg:w-1/2">
+          <div className="absolute left-1/2 top-1/4 -z-10 h-64 w-full rounded-l-full bg-soft-blue md:h-44 md:-translate-y-12 lg:h-64"></div>
+          <img
+            src={illustrationHero}
+            className="h-60 md:h-72 lg:h-96"
+            alt="Hero image"
+          />
         </div>
       </div>
       <div className="md:hidden flex flex-col font-rubik">
-        <div>
-          <img src={illustrationHero} alt="Illustration" />
+        <div className="relative flex justify-center md:w-1/3 lg:w-1/2">
+          <div className="absolute -z-10 h-64 w-full rounded-l-full bg-soft-blue "></div>
+          <img src={illustrationHero} className="h-60" alt="Illustration" />
         </div>
         <div className="flex flex-row">
           <div className="flex flex-col items-center text-center justify-center md:m-10">

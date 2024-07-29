@@ -7,6 +7,8 @@ const FAQ = () => {
   //initializes a state variable named "active" and a function to update it as "setActive" using the useState hook, intial value is set to false
   const [active, setActive] = useState(false);
 
+  const [activeId, setActiveId] = useState(null);
+
   //array of data to be displayed in the FAQ section that contains objects
   const data = [
     {
@@ -42,16 +44,19 @@ const FAQ = () => {
           answered please feel free to email us.
         </p>
       </div>
+      {/* iterate over each item in the data array */}
       <div className="flex flex-col justify-start space-y-4 text-very-dark-blue p-10">
         {data.map((item) => {
+          const isActive = activeId === item.id;
           return (
+            // for each item, create a div element with all information from array to be displayed
             <div
               key={item.id}
               className="flex flex-col items-center justify-center space-y-4"
             >
               <div className="flex flex-row items-center justify-between w-full">
                 <button
-                  onClick={() => setActiveId(!active ? null : item.id)}
+                  onClick={() => setActiveId(isActive ? null : item.id)}
                   className="w-full text-left text-lg font-bold"
                 >
                   {item.intro}
@@ -59,7 +64,7 @@ const FAQ = () => {
                 <img src={active ? Minus : Plus} alt="icon" />
               </div>
               <hr className="w-full border-gray-300" />
-              <div className={active ? "block" : "hidden"}>
+              <div className={isActive ? "block" : "hidden"}>
                 <p className="text-gray-500">{item.pg}</p>
               </div>
             </div>

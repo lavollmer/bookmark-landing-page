@@ -8,7 +8,7 @@ import "../../src/App.css";
 const Extension = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center text-center m-10">
+      <div className="flex flex-col items-center justify-center text-center m-10 md:mt-40">
         <h1 className="flex flex-col items-center p-4 font-bold text-3xl  md:text-4xl text-very-dark-blue">
           Download the extension
         </h1>
@@ -18,7 +18,7 @@ const Extension = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-center space-y-6 md:space-x-2">
+      <div className="flex flex-col items-center md:flex-row md:justify-center md:items-center space-y-6 md:space-x-2 md:space-y-0 md:mb-40">
         <div className="flex max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={ChromeIcon} alt="chrome icon" className="w-26 h-26" />
           <h1 className="flex font-bold text-very-dark-blue text-2xl p-4">
@@ -33,7 +33,7 @@ const Extension = () => {
           </button>
         </div>
 
-        <div className="max-w-xs  rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
+        <div className="flex max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={FirefoxIcon} alt="firefox icon" className="w-26 h-26" />
           <h1 className="flex font-bold text-very-dark-blue text-2xl p-4">
             Add to Firefox
@@ -47,7 +47,7 @@ const Extension = () => {
           </button>
         </div>
 
-        <div className="max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
+        <div className="flex max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={OperaIcon} alt="opera icon" className="w-26 h-26" />
           <h1 className="flex font-bold text-very-dark-blue text-2xl p-4">
             Add to Opera

@@ -41,7 +41,7 @@ const Newsletter = () => {
           {error && <p className="text-red-500 mt-2">{error}</p>}
           <button
             type="submit"
-            className="flex md:flex-row justify-center items-center text-center bg-soft-red font-bold text-white rounded-md text-md md:text-lg mt-4 md:w-1/2 md:h-full md:mt-0"
+            className="flex md:flex-row justify-center items-center text-center bg-soft-red font-bold text-white rounded-md text-md w-1/2 h-3/4 md:text-lg mt-4 md:w-1/2 md:h-full md:mt-0"
           >
             Contact Us
           </button>

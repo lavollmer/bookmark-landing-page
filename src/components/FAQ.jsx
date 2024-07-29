@@ -51,7 +51,7 @@ const FAQ = () => {
             >
               <div className="flex flex-row items-center justify-between w-full">
                 <button
-                  onClick={() => setActive(!active)}
+                  onClick={() => setActiveId(!active ? null : item.id)}
                   className="w-full text-left text-lg font-bold"
                 >
                   {item.intro}

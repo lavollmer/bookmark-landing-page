@@ -3,8 +3,9 @@ import illustrationHero from "../assets/illustration-hero.svg";
 import "../styles/Blueshape.css";
 import Features from "./Features";
 import Extension from "./Extension";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import FAQ from "./FAQ";
+import "../App.css";
 
 const BookmarkManager = () => {
   return (
@@ -27,14 +28,14 @@ const BookmarkManager = () => {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
       </div>
-      <div className="flex flex-row items-center justify-center mt-2 space-x-2">
+      <div className="flex flex-row items-center justify-center mt-2 space-x-4 font-rubik">
         <div>
-          <button className="bg-soft-blue text-white rounded-md text-md py-3 md:text-lg md:py-3 px-2 md:px-4 font-bold">
+          <button className="box-shadow bg-soft-blue text-white rounded-md text-md py-3 md:text-lg md:py-3 px-2 md:px-4 ">
             Get it on Chrome
           </button>
         </div>
         <div>
-          <button className="bg-grayish-blue text-white rounded-md text-md md:text-lg py-3 md:py-3 px-2 md:px-4 font-bold">
+          <button className="box-shadow bg-customGray text-very-dark-blue rounded-md font-bold text-md md:text-lg py-3 md:py-3 px-2 md:px-4 ">
             Get it on Firefox
           </button>
         </div>

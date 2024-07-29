@@ -8,6 +8,7 @@ export default {
         "soft-red": "hsl(0, 94%, 66%)",
         "grayish-blue": "hsl(229, 8%, 60%)",
         "very-dark-blue": "hsl(229, 31%, 21%)",
+        "customGray" : "#f4f4f4",
       },
       fontFamily: ["rubik", "sans-serif"],
     },

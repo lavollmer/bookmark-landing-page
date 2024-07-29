@@ -39,29 +39,30 @@ const Features = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-evenly text-xl text-grayish-blue border-grayish-blue space-y-4">
-        <hr className="w-3/4 border-t border-gray-300" />
+        <hr className="md:hidden w-3/4 border-t border-gray-300" />
         <button
           onMouseEnter={handleSimple}
           className="hover:border-b-2 hover:border-soft-red hover:text-very-dark-blue cursor-pointer"
         >
           Simple Bookmarking
         </button>
-        <hr className="w-3/4  border-t border-gray-300" />
+        <hr className="md:hidden w-3/4 border-t border-gray-300" />
         <button
           onMouseEnter={handleSpeedy}
           className="hover:border-b-2  hover:border-soft-red hover:text-very-dark-blue cursor-pointer"
         >
           Speedy Searching
         </button>
-        <hr className=" w-3/4  border-t border-gray-300" />
+        <hr className="md:hidden w-3/4  border-t border-gray-300" />
         <button
           onMouseEnter={handleEasy}
           className="hover:border-b-2 hover:border-soft-red hover:text-very-dark-blue cursor-pointer"
         >
           Easy Sharing
         </button>
-        <hr className="w-3/4  border-t hover:text-very-dark-blue border-gray-300" />
+        <hr className="md:hidden w-3/4  border-t hover:text-very-dark-blue border-gray-300" />
       </div>
+      <hr className="hidden md:block justify-center items-center m-10 border-t hover:text-very-dark-blue border-gray-300" />
       {features === "simpleBookmarking" && <SimpleBookmarking />}
       {features === "speedySearching" && <SpeedySearching />}
       {features === "easySharing" && <EasySharing />}

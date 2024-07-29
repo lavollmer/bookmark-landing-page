@@ -8,9 +8,9 @@ const BookmarkManager = () => {
   return (
     <div>
       <div className="flex flex-row space-x-4 p-20">
-        <div className="flex flex-col m-20 font-rubik">
-          <div className="flex flex-col justify-start p-20 space-y-30">
-            <div className="flex flex-col">
+        <div className="flex flex-col m-20 font-rubik w-1/2 space-y-40">
+          <div className="flex flex-col justify-start p-20 space-y-10">
+            <div className="flex flex-col space-y-10">
               <h1 className="flex flex-col font-bold text-6xl text-very-dark-blue">
                 A Simple Bookmark Manager
               </h1>

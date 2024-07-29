@@ -3,6 +3,7 @@ import Logo from "../assets/logo-bookmark.svg";
 import CloseIcon from "../assets/icon-close.svg";
 import FacebookIcon from "../assets/icon-facebook.svg";
 import TwitterIcon from "../assets/icon-twitter.svg";
+import BookmarkWhiteImage from "../assets/BookmarkSideNavLogo.png";
 import { useState } from "react";
 
 const SideNav = () => {
@@ -26,7 +27,7 @@ const SideNav = () => {
     <div className="fixed inset-0 z-50 flex flex-col font-rubik text-white bg-very-dark-blue bg-opacity-95 top-0 left-0 p-8">
       <div className="flex flex-row justify-between p-10">
         <div>
-          <img src={Logo} alt="Logo icon" />
+          <img src={BookmarkWhiteImage} alt="Logo" className="h-10 w-40" />
         </div>
         <div>
           <button onClick={handleClose}>

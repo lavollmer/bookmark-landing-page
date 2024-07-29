@@ -57,11 +57,11 @@ const FAQ = () => {
               <div className="flex flex-row items-center justify-between w-full">
                 <button
                   onClick={() => setActiveId(isActive ? null : item.id)}
-                  className="w-full text-left text-lg font-bold"
+                  className="flex flex-row justify-between items-center w-full text-left text-lg font-bold"
                 >
                   {item.intro}
+                  <img src={active ? Minus : Plus} alt="icon" />
                 </button>
-                <img src={active ? Minus : Plus} alt="icon" />
               </div>
               <hr className="w-full border-gray-300" />
               <div className={isActive ? "block" : "hidden"}>

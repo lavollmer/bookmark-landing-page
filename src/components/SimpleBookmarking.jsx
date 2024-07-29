@@ -3,11 +3,11 @@ import IllustrationFeatureOne from "../assets/illustration-features-tab-1.svg";
 
 const SimpleBookmarking = () => {
   return (
-    <div className="flex flew-row items-center justify-center m-10">
+    <div className="flex flex-col md:flew-row items-center justify-center m-6 md:m-10">
       <div>
         <img src={IllustrationFeatureOne} alt="illustration" />
       </div>
-      <div className="flex flex-col ml-20 space-y-6">
+      <div className="flex flex-col items-center text-center justify-center space-y-10 mt-10 md:ml-20 md:space-y-6">
         <h1 className="flex flex-col font-bold text-3xl  md:text-4xl text-very-dark-blue">
           Bookmark in one click
         </h1>

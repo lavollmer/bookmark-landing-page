@@ -5,6 +5,7 @@ import Features from "./Features";
 import Extension from "./Extension";
 import Footer from "./Footer";
 import FAQ from "./FAQ";
+import Newsletter from "./Newsletter";
 import "../App.css";
 
 const BookmarkManager = () => {
@@ -48,6 +49,9 @@ const BookmarkManager = () => {
       </div>
       <div>
         <FAQ />
+      </div>
+      <div>
+        <Newsletter />
       </div>
       <div>
         <Footer />

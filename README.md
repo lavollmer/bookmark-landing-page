@@ -1,12 +1,12 @@
 # Bookmark landing page
 
-This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This project involved making a bookmark landing page that included a mobile and web responsive design. It also included a side navigation bar in mobile, a footer, a newsletter signup, tailwindcss design layout and an faq accordian.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,8 +14,6 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -29,10 +27,31 @@ Users should be able to:
   - The input field is empty
   - The email address is not formatted correctly
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+Desktop Version:
 
+![Desktop Landing Page](./src/assets/DesktopLandingPage.png)
+
+![Desktop Features Page](./src/assets/FeaturesDesktop.png)
+
+![Desktop Extension Page](./src/assets/ExtensionDesktop.png)
+
+![Desktop FAQ Accordian](./src/assets/FAQDesktop.png)
+
+![Desktop Newsletter and Footer Page](./src/assets/NewsletterSignupFooterDesktop.png)
+
+Mobile Version:
+
+![Mobile Landing Page](./src/assets/MobileLandingPage.png)
+
+![Mobile Features Page](./src/assets/FeaturesMobile.png)
+
+![Mobile Extension Page](./src/assets/DownloadExtensionMobile.png)
+
+![Mobile FAQ Accordian](./src/assets/FAQMobile.png)
+
+![Mobile Newsletter and Footer Page](./src/assets/NewsletterSignupFooterMobile.png)
 
 ### Links
 
@@ -50,25 +69,17 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-
 ### What I learned
 
-
-
 ### Continued development
-
-
 
 ### Useful resources
 
 - [SVG Creator](https://www.softr.io/tools/svg-shape-generator) - I created the blue half circle with this website.
 - [Half Ellipse Shape Inspiration](https://github.com/Abbassher55/bookmark-project/blob/main/src/hero-section/Hero.jsx) - Inspiration for the half ellipse shape on the page.
- 
 
 ## Author
 
 - Website - [Laura V](www.lauradeveloper.com)
 - Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
 - Github - [@lavollmer](https://github.com/lavollmer)
-
-## Acknowledgments

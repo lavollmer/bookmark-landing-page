@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Plus from "../assets/icon-arrow.svg";
-import Minus from "../assets/icon-close.svg";
+import Minus from "../assets/CloseArrow2.png";
 
 //Log paths to the console
 console.log("../assets/icon-close.svg", Minus);

@@ -5,6 +5,7 @@ import "../App.css";
 const BookmarkManager = () => {
   return (
     <div>
+      {/* desktop version of landing page */}
       <div className="hidden md:flex flex-row space-x-4 p-20">
         <div className="flex flex-col m-20 font-rubik w-1/2 space-y-40">
           <div className="flex flex-col justify-start p-20 space-y-10">
@@ -33,6 +34,7 @@ const BookmarkManager = () => {
           </div>
         </div>
         <div className="relative flex justify-center md:w-1/3 lg:w-1/2">
+        {/* shape behind the image */}
           <div className="absolute left-1/2 top-1/4 -z-10 h-64 w-full rounded-l-full bg-soft-blue md:h-44 md:-translate-y-12 lg:h-64"></div>
           <img
             src={illustrationHero}
@@ -41,6 +43,7 @@ const BookmarkManager = () => {
           />
         </div>
       </div>
+      {/* mobile version of landing page */}
       <div className="md:hidden flex flex-col font-rubik">
         <div className="relative flex flex-row justify-center items-center">
           <div className="absolute -z-10 h-64 w-full rounded-l-full bg-soft-blue "></div>

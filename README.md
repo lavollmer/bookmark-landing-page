@@ -76,7 +76,6 @@ After completing the initial design, I compared it against the original design a
 
 Once the project was complete, I deployed it to Netlify for a live site. I also reviewed my code, added comments, and refactored it for better readability and maintainability.
 
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -92,6 +91,28 @@ Once the project was complete, I deployed it to Netlify for a live site. I also 
 
 2. **Setting Up the Email Signup Section for the Newsletter**: The form element uses the `handleSubmit` function to manage form submission. The input element is specified for email addresses, binding its value to the `email` state. The `onChange` event updates the `email` state whenever the input value changes, using Tailwind CSS for styling. An error message is conditionally rendered if the `error` state is truthy. The submit button is configured to submit the form.
 
+3. **Creating an Ellipse Shape with `<div>` Tag and TailwindCSS**: Crafting the ellipse shape was a challenging task. The code snippet below demonstrates how to achieve this using TailwindCSS:
+
+   - `absolute`: Positions the element absolutely relative to its nearest positioned ancestor.
+   - `left-1/2`: Positions the element 50% from the left of its containing block.
+   - `top-1/4`: Positions the element 25% from the top of its containing block.
+   - `-z-10`: Sets the z-index to -10, placing the element behind other elements.
+   - `h-64`: Sets the height of the element to 16rem.
+   - `w-full`: Sets the width of the element to 100% of its containing block.
+   - `rounded-l-full`: Applies a fully rounded border to the left side of the element, creating a half-ellipse shape.
+   - `bg-soft-blue`: Applies a background color of soft blue.
+   - `md:h-44`: On medium screens and up, sets the height to 11rem.
+   - `md:-translate-y-12`: On medium screens and up, translates the element 3rem upwards.
+   - `lg:h-64`: On large screens and up, sets the height back to 16rem.
+
+   4. **Text Shadow using CSS Properties and Classes**: I created shadows behind my buttons and text using CSS classsees. Below is the code for the text shadows:
+
+   ```.text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   }
+   ```
+
+
 ### Continued development
 
 I will continue to learn more about TailwindCSS, ReactJS and updating my process of building a website.
@@ -106,3 +127,4 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 - Website - [Laura V](www.lauradeveloper.com)
 - Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
 - Github - [@lavollmer](https://github.com/lavollmer)
+

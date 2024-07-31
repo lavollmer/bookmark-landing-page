@@ -57,6 +57,10 @@ Mobile Version:
 
 ![Mobile Newsletter and Footer Page](./src/assets/NewsletterSignupFooterMobile.png)
 
+Email Error Message:
+
+![Email Error Message](./src/assets/EmailError.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -112,7 +116,6 @@ Once the project was complete, I deployed it to Netlify for a live site. I also 
    }
    ```
 
-
 ### Continued development
 
 I will continue to learn more about TailwindCSS, ReactJS and updating my process of building a website.
@@ -127,4 +130,3 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 - Website - [Laura V](www.lauradeveloper.com)
 - Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
 - Github - [@lavollmer](https://github.com/lavollmer)
-

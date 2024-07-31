@@ -17,6 +17,8 @@ This project involved making a bookmark landing page that included a mobile and 
 
 ## Overview
 
+
+
 ### The challenge
 
 Users should be able to:
@@ -56,7 +58,7 @@ Mobile Version:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Bookmark Landing Page Laura Dev](https://bookmarklandingpagelauradev.netlify.app/)
 
 ## My process
 

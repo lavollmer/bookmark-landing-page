@@ -1,7 +1,5 @@
 import React from "react";
 import illustrationHero from "../assets/illustration-hero.svg";
-import Blob from "../assets/blob.svg";
-
 import "../App.css";
 
 const BookmarkManager = () => {

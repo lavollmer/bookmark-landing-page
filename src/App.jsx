@@ -7,6 +7,7 @@ import FAQ from "./components/FAQ";
 import Newsletter from "./components/Newsletter";
 import BookmarkManager from "./components/BookmarkManager";
 
+// import all the components into the main App
 function App() {
   return (
     <>

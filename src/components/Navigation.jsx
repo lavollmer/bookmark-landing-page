@@ -24,6 +24,7 @@ const Navigation = () => {
       <div>
         <img src={Logo} alt="logo" />
       </div>
+      {/* navigation for desktop */}
       <div className="flex flex-row space-x-6 font-rubik text-very-dark-blue">
         <button className="hidden md:block text-shadow">FEATURES</button>
         <button className="hidden md:block text-shadow">PRICING</button>
@@ -32,6 +33,7 @@ const Navigation = () => {
           LOGIN
         </button>
       </div>
+      {/* hamburger icon for mobile view */}
       <div className="md:hidden">
         <button onClick={handleClick}>
           <img src={Hamburger} alt="hamburger" />

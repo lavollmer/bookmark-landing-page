@@ -17,8 +17,6 @@ This project involved making a bookmark landing page that included a mobile and 
 
 ## Overview
 
-
-
 ### The challenge
 
 Users should be able to:
@@ -73,6 +71,20 @@ Mobile Version:
 
 ### What I learned
 
+Things I learned:
+
+1. Validating Email - I learned that you created a function called validateEmail that takes one parameter email. From there, one would use a regular expression pattern that assigns the variable re to validate the structure of an email address. Ater the regex pattern then convert the email to a string and convert it to lowercase using the fucntion. It tests the lowercase email string against the regex pattern re using the test method. The test method returns true is the femail matches the pattern otherwise it is false.
+
+```^ asserts the start of the string.
+[^\s@]+ matches one or more characters that are not whitespace (\s) or @.
+@ matches the @ symbol.
+[^\s@]+ matches one or more characters that are not whitespace or @ (the part after the @).
+\. matches a literal dot (.).
+[^\s@]+ matches one or more characters that are not whitespace or @ (the domain part).
+$ asserts the end of the string.``
+
+2. Setting the email section signup for the newsletter - The form element attaches the handleSubmit function to handle the form submission. The input element specifices the input is for email address, bind the input value to the email state, onChange updates the email state when the input value changes with tailwindcss designlayout. The error message is conditionally render if the rror state is truthy. The submit button specifies that the button submits the form. 
+
 ### Continued development
 
 ### Useful resources
@@ -85,3 +97,4 @@ Mobile Version:
 - Website - [Laura V](www.lauradeveloper.com)
 - Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
 - Github - [@lavollmer](https://github.com/lavollmer)
+```

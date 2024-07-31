@@ -2,19 +2,27 @@ import React from "react";
 import { useState } from "react";
 
 const Newsletter = () => {
+  // state for the email input
   const [email, setEmail] = useState("");
+  // state for the error message
   const [error, setError] = useState(false);
 
+  // function to validate the email input
   const validateEmail = (email) => {
+    // regular expression to validate the email
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // return the test of the email
     return re.test(String(email).toLowerCase());
   };
 
   const handleSubmit = (e) => {
+    // prevent the default action of the form
     e.preventDefault();
+    // if the email is valid, set the error to an empty string
     if (validateEmail(email)) {
       setError("");
       console.log("Email is valid");
+      // if the email is not valid, set the error message
     } else {
       setError("Please enter a valid email address");
     }
@@ -27,10 +35,12 @@ const Newsletter = () => {
         <h2 className="text-2xl">Stay up-to-date with what we’re doing</h2>
       </div>
       <div className="flex flex-row justify-center items-center text-center w-full">
+        {/* form input with onSubmit handleSubmit function */}
         <form
           className="flex flex-col justify-center items-center md:flex-row md:space-x-4 mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
           onSubmit={handleSubmit}
         >
+          {/* input section includes type email, value email and onChange with setEmail with event target value */}
           <input
             type="email"
             placeholder="name@mail.com"

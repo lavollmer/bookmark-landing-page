@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../assets/logo-bookmark.svg";
 import FacebookIcon from "../assets/icon-facebook.svg";
 import TwitterIcon from "../assets/icon-twitter.svg";
 import BookmarkLogoWhite from "../assets/BookmarkWhiteImage.png";

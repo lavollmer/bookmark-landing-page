@@ -3,10 +3,15 @@ import { useState } from "react";
 import Plus from "../assets/icon-arrow.svg";
 import Minus from "../assets/icon-close.svg";
 
+//Log paths to the console
+console.log("../assets/icon-close.svg", Minus);
+console.log("../assets/icon-arrow.svg", Plus);
+
 const FAQ = () => {
   //initializes a state variable named "active" and a function to update it as "setActive" using the useState hook, intial value is set to false
   const [active, setActive] = useState(false);
 
+  //initializes a state variable named "activeId" and a function to update it as "setActiveId" using the useState hook, intial value is set to null
   const [activeId, setActiveId] = useState(null);
 
   //array of data to be displayed in the FAQ section that contains objects
@@ -47,6 +52,7 @@ const FAQ = () => {
       {/* iterate over each item in the data array */}
       <div className="flex flex-col justify-start space-y-4 text-very-dark-blue mb-10 p-10 md:p-40">
         {data.map((item) => {
+          // check if the activeId is equal to the item.id
           const isActive = activeId === item.id;
           return (
             // for each item, create a div element with all information from array to be displayed
@@ -56,11 +62,13 @@ const FAQ = () => {
             >
               <div className="flex flex-row items-center justify-between w-full">
                 <button
+                  // if the activeId is equal to the item.id, set the active state to true, else set it to false
                   onClick={() => setActiveId(isActive ? null : item.id)}
                   className="flex flex-row justify-between items-center w-full text-left text-lg font-bold"
                 >
                   {item.intro}
-                  <img src={active ? Minus : Plus} alt="icon" />
+                  {/* if active is true then show Minus sign otherwise show plus sign */}
+                  <img src={isActive ? Minus : Plus} alt="icon" />
                 </button>
               </div>
               <hr className="w-full border-gray-300" />

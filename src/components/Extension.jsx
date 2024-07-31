@@ -17,7 +17,7 @@ const Extension = () => {
           you've got a favourite you'd like us to prioritize.
         </p>
       </div>
-
+      {/* each section is the same styling with different images and text */}
       <div className="flex flex-col items-center md:flex-row md:justify-center md:items-center space-y-6 md:space-x-2 md:space-y-0 md:mb-40">
         <div className="flex max-w-xs rounded-lg overflow-hidden shadow-lg flex flex-col items-center justify-center p-6">
           <img src={ChromeIcon} alt="chrome icon" className="w-26 h-26" />

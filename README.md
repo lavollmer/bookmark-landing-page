@@ -63,8 +63,8 @@ Email Error Message:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Bookmark Landing Page Laura Dev](https://bookmarklandingpagelauradev.netlify.app/)
+- Solution URL: [FrontendMentor Solution Bookmark Landing Page Laura Dev](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-bookmark-landing-page-Rvy0g74FhP)
 
 ### My Process
 
@@ -127,6 +127,6 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 
 ## Author
 
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Laura V](https://lauradeveloper.com/)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
 - Github - [@lavollmer](https://github.com/lavollmer)
